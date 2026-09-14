@@ -13,12 +13,12 @@ class TextGenerationClient:
         """
         初始化客户端。如果不传参数，则自动从环境变量读取。
         """
-        self.api_url = api_url or os.getenv("MAAS_API_URL", "https://api.modelarts-maas.com/v2/chat/completions")
-        self.api_key = api_key or os.getenv("MAAS_API_KEY")
-        self.model_name = model_name or os.getenv("MAAS_MODEL", "deepseek-v4-flash")
+        self.api_url = api_url or os.getenv("API_URL", "https://api.modelarts-maas.com/v2/chat/completions")
+        self.api_key = api_key or os.getenv("API_KEY")
+        self.model_name = model_name or os.getenv("MODEL", "deepseek-v4-flash")
 
         if not self.api_key:
-            raise ValueError("❌ 错误：未检测到 API Key。请设置 MAAS_API_KEY 环境变量或在初始化时传入。")
+            raise ValueError("❌ 错误：未检测到 API Key。请设置 API_KEY 环境变量或在初始化时传入。")
 
     def generate_text(self, payload):
         """

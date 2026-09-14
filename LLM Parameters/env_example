@@ -1,8 +1,11 @@
-# API 接口地址（通常无需修改，如需私有化部署可自行修改）
-MAAS_API_URL=https://api.modelarts-maas.com/v2/chat/completions
+# API 接口地址（以下为默认地址，可自行修改）
+# API Endpoint URL (The following is the default URL, you may modify it yourself)
+API_URL=https://api.modelarts-maas.com/v2/chat/completions
 
-# 你的 API Key（必填，请替换为你自己的真实 Key）
-MAAS_API_KEY=your_api_key_here
+# 你的 API Key（请替换为你自己的真实 Key）
+# Your API Key (Please replace with your own actual Key)
+API_KEY=your_api_key_here
 
-# 模型名称（可选，默认为 deepseek-v4-flash）
-MAAS_MODEL=deepseek-v4-flash
+# 模型名称（以下为默认名称，可自行修改）
+# Model Name (The following is the default name, you may modify it yourself)
+MODEL=deepseek-v4-flash
